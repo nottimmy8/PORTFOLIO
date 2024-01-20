@@ -8,17 +8,35 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <div class="nav">
+    <div id="nav">
       <div id="navBar">
         <div class="logo"><h2>NOLIMIT</h2></div>
         <nav>
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Testiomonial</a></li>
-            <li><a href="">Contact</a></li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Testiomonial</li>
+            <li>Contact</li>
           </ul>
         </nav>
+        <div class="gameMode">
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 20"
+            width="15"
+          >
+            <path
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8.509 5.75c0-1.493.394-2.96 1.144-4.25h-.081a8.5 8.5 0 1 0 7.356 12.746A8.5 8.5 0 0 1 8.509 5.75Z"
+            />
+          </svg>
+        </div>
       </div>
     </div>
 
@@ -37,8 +55,13 @@
       </div>
     </main>
 
-    <div id="About"></div>
+    <div id="About">
+      <div class="AboutContent">
+        <div class="aboutImg"></div>
+        <div class="aboutText"></div>
+      </div>
+    </div>
 
-    <script src="/main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
