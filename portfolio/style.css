@@ -28,6 +28,7 @@ html {
 
 .logo {
   font-size: 12px;
+  color: #f4f4f5;
 }
 
 nav ul {
@@ -56,6 +57,28 @@ li:hover {
   transition: 0.3s;
 }
 
+.navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuBar {
+  border: 1px solid #8a8989;
+  border-radius: 40px;
+  padding: 6px 15px;
+  background-color: #27272ae6;
+}
+
+.menu {
+  color: #f4f4f5;
+}
+.menuBar:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+
 .gameMode {
   padding: 6px 15px;
   border: 1px solid #8a8989;
@@ -66,6 +89,12 @@ li:hover {
 .gameMode:hover {
   scale: 1.1;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+  }
 }
 
 main {
@@ -114,17 +143,39 @@ main {
   height: 100vh;
   display: grid;
   place-items: center;
-  background: #3c3c3d;
+  background-color: #27272ae6;
 }
 
 .AboutContent {
-  width: 80vw;
+  width: 1200px;
+  max-width: 90vw;
   height: 100%;
+  background-color: yellow;
+  /* display: flex; */
+  align-items: center;
+  overflow: hidden;
+}
+
+.aboutText {
+  width: 50%;
+}
+
+.aboutText h1 {
+  font-size: 40px;
+  color: #f4f4f5;
 }
 
 .aboutImg {
-  width: 50%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50px;
+  background-color: #27272ae6;
+  transform: rotate(8deg);
+  overflow: hidden;
+}
+
+.aboutImg img {
+  width: 100%;
+  transform-origin: center;
+  object-fit: cover;
 }
